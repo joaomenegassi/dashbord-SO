@@ -2,6 +2,9 @@
 
 Este projeto implementa um Dashboard de Monitoramento de Sistema completo, desenvolvido em Python, com o objetivo de oferecer uma visão detalhada e em tempo real sobre o estado do sistema operacional. Ele foi concebido como um projeto acadêmico focado em demonstrar a aquisição e processamento de dados do sistema, seguindo padrões de design como MVC e utilizando programação multitarefa.
 
+### Compatibilidade 
+**Este projeto foi desenvolvido e é suportado exclusivamente no ambiente Ubuntu (Linux).** Ele depende fortemente das estruturas e APIs do sistema de arquivos `/proc`, que são específicas de sistemas operacionais baseados em Linux. Portanto, **não é garantido o funcionamento** em outras distribuições Linux e **não funcionará** em sistemas operacionais não-Linux, como Windows ou macOS.
+
 ## Objetivos e Funcionalidades Principais
 
 O Dashboard abrange as seguintes áreas de monitoramento:
