@@ -1,16 +1,31 @@
-# Ambientes Virtuais
-.venv/
+# Ambientes virtuais
 venv/
-env/
-meu_ambiente/
+.venv/
 
-# Python cache
+# Arquivos de cache do Python
 __pycache__/
-*.py[cod]
+*.pyc
+*.egg-info/
+.pytest_cache/
 
-# Arquivos de IDEs (exemplos)
-.vscode/
-.idea/
-
-# Logs
+# Arquivos de dados e logs temporários (se houver)
 *.log
+*.tmp
+*.temp
+
+# Arquivos específicos do Streamlit
+.streamlit/
+app.pyc
+
+# Arquivos de configurações locais (se houver)
+.env
+.flaskenv
+config.local.py
+
+# Resultados de testes (se houver)
+/htmlcov/
+.coverage
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

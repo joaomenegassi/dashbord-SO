@@ -346,7 +346,7 @@ def display_directory_navigation_buttons(contents, set_current_directory_path_fu
         # Apenas cria o botão se for um diretório e o caminho for acessível e existir
         if item_type == 'Diretório' and current_item_full_path and Path(current_item_full_path).is_dir():
             with dir_buttons_cols[i % 5]:
-                if st.button(f" {item_name}", key=f"dir_button_{current_item_full_path}_{idx}"):
+                if st.button(f"📂 {item_name}", key=f"dir_button_{current_item_full_path}_{idx}"):
                     with st.spinner(f"Abrindo {item_name}..."):
                         set_current_directory_path_func(current_item_full_path)
                     st.rerun()
