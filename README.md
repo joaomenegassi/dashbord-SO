@@ -45,3 +45,35 @@ Para executar o dashboard, siga os passos abaixo:
 python3 -m venv venv_dashboard
 source venv_dashboard/bin/activate  # No Linux/macOS
 # No Windows, use: .\venv_dashboard\Scripts\activate
+```
+### 2. Configurar o Ambiente e Instalar Dependências
+
+Este projeto utiliza um Makefile para simplificar a configuração e execução. Certifique-se de que o arquivo requirements.txt está presente na raiz do projeto, pois ele contém a lista de dependências.
+
+Em seguida, utilize o Makefile para criar o ambiente virtual e instalar todas as dependências necessárias:
+
+```bash
+make install
+```
+
+Este comando criará um ambiente virtual (venv) e instalará as bibliotecas listadas no requirements.txt dentro dele.
+
+### 3. Executar o Dashboard
+Após a instalação bem-sucedida, você pode iniciar a aplicação Streamlit usando o Makefile:
+
+```bash
+make run
+```
+
+Este comando ativará o ambiente virtual e executará o app.py com o Streamlit.
+
+O Dashboard será aberto automaticamente no seu navegador web, geralmente em http://localhost:8501. Se não abrir, copie e cole o URL fornecido no terminal em seu navegador.
+
+### 4. Limpeza (Opcional)
+Para remover o ambiente virtual e outros arquivos gerados pelo projeto (como caches), você pode usar o comando clean do Makefile:
+
+```bash
+make clean
+```
+
+Isso é útil para iniciar um novo setup ou liberar espaço em disco.
